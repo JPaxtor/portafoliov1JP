@@ -1,0 +1,271 @@
+
+/*
+body{
+    background-color: lightcyan;
+}
+
+.pruebas{
+    width:100%;
+    height: 100vh;
+    background-color: #222;
+
+    display: grid;
+    grid-template-columns: 20% auto  10%;
+    grid-template-rows:  10%  auto 10%;
+
+
+}
+
+.box{
+    background-color: lightcoral;
+    outline: 1px solid lightslategrey;
+    text-align: center;
+}
+.c1{
+    grid-column: 1/4;
+    background-color: #222;
+    z-index: 2000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.c2{
+    grid-row: 2/3;
+    background-color: lightblue;
+}
+.c3{
+    grid-column: 2/4;
+    background-color: lightseagreen;
+}
+.c4{
+    grid-column: 1/4;
+    background-color: blueviolet;
+}
+.log{
+    width: 5%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2200;
+    
+}
+.menu{
+    background-color: #fff;
+    display: flex;
+    width: 95%;
+    z-index: 2100;
+}
+.menu ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0px 30px;
+}
+.menu ul li a{
+    color: #222;
+    text-decoration: none;
+    font-style: none;
+}
+.section2{
+    width: 100%;
+    height: 100vh;
+} */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior:smooth;
+}
+#section1{
+    width: 100%;
+    height: 100vh;
+
+}
+.head{
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 0px;
+    transition: top 1s;
+    z-index: 1000;
+}
+.head[data-visible = "true"]{
+    top: -100px;
+    transition: top 1s;
+}
+.logo{
+    text-align: center;
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-size: 3em;
+    color: aqua;
+}
+.logo span{
+    font-size: 1.2em;
+    position: absolute;
+    color: rgb(132, 23, 138);
+    left: 25px;
+}
+.items{
+    width: 90%;
+}
+.items ul{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.items ul li{
+    list-style: none;
+    margin: 0px 5%;
+}
+.items ul li a{
+    font-style: none;
+    text-decoration: none;
+    color: #eee;
+}
+.items ul li a:hover{
+    font-style: none;
+    text-decoration: none;
+    color: #999;
+    border-bottom: 1px solid rgb(132, 23, 138);
+}
+.contbtn{
+    right: 0;
+    margin: 2%;
+    position: fixed;
+    z-index: 3000;
+
+}
+.contbtn button{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.6),rgb(0,0,0,0.9)),url(/img/minimalist-small-ring-led-light-dxgghcv6pq9gc528.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 30% auto ;
+    grid-template-rows: auto;
+    
+}
+.contenedor .box{
+    color: #999;
+}
+.c1{
+    background-position: center;
+    background-size: cover;
+    transition: background 1s;
+    z-index: 500;
+    opacity: .4;
+    background-image: url(/img/1.jpg);
+}
+.c1[data-visible = "sec"]{
+    opacity: .4;
+    background-image: url(/img/2.jpg);
+
+}
+.c1[data-visible = "ter"]{
+    background-image: url(/img/3.png);
+}
+.c1 .btn-2{
+    height: 25%;
+    background: #222;
+    border: none;
+    color: #ddd;
+    transition:  .5s;
+}
+.c1 .btn-2:hover{
+    height: 30%;
+    transition: 1s;
+    transition:  .5s;
+    background-color: #333;
+}
+.c1 .btn-2:active{
+    height: 30%;
+    transition: .2s;
+    color: #222;
+    background-color: rgb(133, 128, 128);
+}
+.c2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    justify-content: center;
+    row-gap: 10px;
+    margin-right: 5%;
+}
+.c2 h1{
+    font-family: sans-serif;
+    font-size: 4em;
+    color: rgb(173, 216, 230);
+    user-select: none;
+}
+.c2 h1 .span-c2:first-child:hover{
+    color: rgba(155, 105, 160, 0.9);
+}
+.c2 h1 .span-c2:nth-child(3):hover{
+    color: rgba(155, 105, 160, 0.9);
+}
+.c2 h1 .span-c2:last-child:hover{
+    color: rgba(155, 105, 160, 0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section2{
+    width: 100%;
+    height: 100vh;
+}
